@@ -1,0 +1,10 @@
+{
+  "name": "tooling-talk",
+  "version": "0.0.1",
+  "dependencies": {
+    "express.io": "1.1.13",
+    "swig": "~1.1.0",
+    "neon": "~1.0.0",
+    "underscore": "~1.5.2"
+  }
+}

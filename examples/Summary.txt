@@ -1,0 +1,32 @@
+Summary
+
+- Intro[Slide]
+- Whats is tooling[Slide]
+- Why it matters[Slide]
+- Browser as an IDE[Slide]
+	- Hangouts get link[Slide]
+
+- Debugging on Chrome[Slide]
+	- jQuery.ready y jQuery.on('ready')[Slide and Example(Done)]
+- Break points[Slide and demo]
+	- conditional break points[Slide and demo]
+
+- Network and latency[Slide]
+	- Network panel[Demo]
+	- Simulating latency[Slide and Example(Done)]
+
+- Improving performance[Slide -> If it moves, we track it. Sometimes we’ll draw a graph of something that isn’t moving yet, just in case it decides to make a run for it.]
+	- Console.time[Slide and Example(Done)]
+	- window.performance.now()[Slide and Example(Done)]
+	- window.performance[Slide]
+	- Compile values[Slide and Example(Done)]
+		http://stackoverflow.com/questions/313893/how-to-measure-time-taken-by-a-function-to-execute/313902#313902
+
+	- Add to your apps[Example(Done)]
+
+	Timeline and live apps[Slides and Example(Done)]
+
+- More tools to test
+	- Source Maps
+	- Live reload plugins
+	- Grunt. Yeoman, Bower

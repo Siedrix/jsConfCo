@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Performance-test</title>
+	<style>
+	.grid-row{}
+	.grid-item{
+		position: absolute;
+		display:inline-block;
+		border: 1px solid black;
+	}
+	</style>
+</head>
+<body>
+
+<div id="grid">
+{% for row in grid %}
+	<div class="grid-row">
+	{% for item in grid %}
+		<div class="grid-item" data-x="{{item}}" data-y="{{row}}">
+		</div>
+	{% endfor %}
+	</div>
+{% endfor %}
+</div>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/color.js"></script>
+<script src="/js/animated.js"></script>
+<script>
+	var gridSize = {{ grid.length }};
+</script>
+</body>
+</html>

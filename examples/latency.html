@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Latency</title>
+	<link rel="stylesheet" href="/css/columns.css">
+	<script src="/js/jquery.js"></script>
+</head>
+<body>
+<div class="left">
+	<form>
+		<p><textarea name="text">Un poco de texto</textarea></p>
+		<p><button>Enviar</button></p>
+	</form>
+</div>
+<div class="right">
+	<h2>Resultado</h2>
+	<pre>
+	</pre>
+</div>
+<script>
+$(document).ready(function () {
+	$('form').on('submit', function (e) {
+		e.preventDefault();
+
+		var xhr = $.get('/api/success/', {text:$('textarea').val()});
+		// var xhr = $.get('/api/request/', {text:$('textarea').val()});
+
+		// $('pre').html("Procesando...");
+
+		xhr.done(function (data) {
+			var str = JSON.stringify(data);
+
+			str = str.replace(/{/g, '{\n')
+			.replace(/,/g, ',\n')
+			.replace(/}/g, '\n}')
+
+			$('pre').html("<b>Success</b><br>"+str);
+		});
+
+		// xhr.fail(function (err) {
+		// 	var str = JSON.stringify(err.responseJSON);
+
+		// 	str = str.replace(/{/g, '{\n')
+		// 	.replace(/,/g, ',\n')
+		// 	.replace(/}/g, '\n}');
+
+		// 	$('pre').html("<b style='color:red'>Error: "+ err.status +"</b><br>"+ str);
+		// });
+
+	});
+});
+</script>
+</body>
+</html>

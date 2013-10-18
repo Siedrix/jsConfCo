@@ -1,0 +1,108 @@
+@import url(s5-core.css); /* required to make the slide show run at all */
+@import url(framing.css); /* sets basic placement and size of slide components */
+
+#controls, #currentSlide, #footer{display: none}
+
+body{
+	font-family: sans-serif;
+}
+
+h1{
+	font-family: colaborate-regularregular;
+	font-size: 80px;
+}
+
+.title-slide{}
+.title-slide h1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: black;
+	color: white;
+	margin: 0;
+	padding: 10px 60px;
+}
+.title-slide h1 a{
+	color: white
+}
+.title-slide h1.top{
+	top: 0;
+	bottom: initial;
+}
+.title-slide .photo-credit{
+	color: white;
+	background: black;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	font-size: 10px;
+}
+
+.title-slide .photo-credit.bottom {
+	bottom: 0;
+	top: initial;
+}
+
+.title-slide .photo-credit a{
+	color: white;
+}
+
+.green{ background: #B5D045;color: white;}
+.blue{ background: #81C0C5;color: white;}
+.dark-blue{ background: #102739;color: white;}
+.dark-red{ background: #551111;color: white;}
+
+.content{
+	box-sizing: border-box;
+	padding: 50px
+}
+.content p{
+	font-family: colaborate-regularregular;
+}
+
+.content a{
+	color: white;
+}
+
+/* Particular rules for this presentation start here */
+
+.tools{
+	background: url('/images/tools.jpg')
+}
+
+.workplace{
+	background: url('/images/5822753826_87ddfe2970_o.jpg');
+	background-size:cover;
+}
+
+.worktable{
+	background: url('/images/8051282678_a54700f151_h.jpg');
+	background-size:cover;
+}
+
+.perf{
+	background: url('/images/perf.jpg');
+	background-size:cover;	
+}
+
+.timing{
+	background: url('/images/timing-overview.png');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+.live{
+	background: url('/images/live.jpg');
+	background-size:cover;		
+}
+
+.cables{
+	background: url('/images/cables.jpg');
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position-x: center;
+	background-position-y: center;
+}

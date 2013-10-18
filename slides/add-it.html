@@ -1,0 +1,13 @@
+<div class="slide green content">
+	<h1>Agregalo a tus apps.</h1>
+	<p>Toma estos datos y subelos a tu server.</p>
+	<pre>
+var xhr = $.post('/api/record/',{
+	gridSize : window.gridSize,
+	loadTime : window.performance.timing.loadEventEnd - window.performance.timing.fetchStart,
+	renderTime : window.renderTime,
+	memoryUsed : window.performance.memory.usedJSHeapSize,
+	memoryAvailable : window.performance.memory.jsHeapSizeLimit
+});
+	</pre>
+</div>

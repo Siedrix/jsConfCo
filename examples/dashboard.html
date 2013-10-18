@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Performance Dashboard</title>
+	<script src="/js/jquery.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	$(document).ready(function () {
+		window.client = io.connect('ws://'+window.location.host);
+
+		client.on('measure', function (data) {
+			console.log('Got measure',data);
+
+			$('body').append('<p>En un grid de <b>'+ data.gridSize + '</b> el render tardo <b>'+ data.renderTime +'ms</b> y el tiempo de carga es <b>' + data.loadTime + 'ms</b>')
+		});
+	});
+	</script>
+</head>
+<body>
+
+</body>
+</html>
