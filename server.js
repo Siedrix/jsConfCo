@@ -27,7 +27,8 @@ var slides = new Slides({
 		'compile.html',
 		'window-performance.html',
 		'add-it.html',
-		'timeline.html'
+		'timeline.html',
+		'thanks.html'
 	]
 });
 
